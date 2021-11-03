@@ -1,4 +1,5 @@
 import org.junit.After;
+import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -11,7 +12,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
  */
 @RunWith(MockitoJUnitRunner.class)
 public class InterfaceTest {
-    private WebDriver driver;
+    private static WebDriver driver;
 //    use this https://www.selenium.dev/documentation/guidelines/page_object_models/
 
     @Before
@@ -28,10 +29,5 @@ public class InterfaceTest {
         driver.close();
         //Step 2- Quit Driver
         driver.quit();
-    }
-
-    @Test
-    public void testLogin() {
-
     }
 }
